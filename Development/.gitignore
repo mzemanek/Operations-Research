@@ -1,0 +1,10 @@
+# Exclude Visual Studio related stuff.
+Debug/
+Release/
+
+obj/
+
+*.suo
+*.user
+
+StyleCop.Cache
