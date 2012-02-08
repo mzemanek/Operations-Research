@@ -1,0 +1,17 @@
+/main:OperationsResearch.Program
+/out:./Release/OR.exe
+/pkg:dotnet
+/target:exe
+
+/resource:./Source/Console/Program.usage,OperationsResearch.Program.usage
+/resource:./Source/Console/Simplex/Simplex.usage,OperationsResearch.Simplex.usage
+
+./Source/Console/Properties/AssemblyInfo.cs
+./Source/Console/CommandSetAttribute.cs
+./Source/Console/CommandSetException.cs
+./Source/Console/ICommandSet.cs
+./Source/Console/Program.cs
+./Source/Console/ThrowUtility.cs
+./Source/Console/Simplex/Simplex.cs
+./Source/Console/Simplex/SimplexArguments.cs
+
