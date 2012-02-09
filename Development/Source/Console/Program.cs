@@ -3,23 +3,31 @@
    using System;
    using System.Collections.Generic;
    using System.IO;
+   using System.Text.RegularExpressions;
    using System.Reflection;
 
    internal static class Program
    {
-      internal static readonly Assembly Assembly = Assembly.GetExecutingAssembly();
-      internal static readonly string Version = Program.Assembly.GetName().Version.ToString();
-      internal static readonly string Name = "Operations Research";
-      internal static readonly string Title = String.Format("{0} (Version {1})", Program.Name, Program.Version);
+      internal static readonly Assembly Assembly;
+      internal static readonly String AssemblyVersion;
+      internal static readonly String Name;
+      internal static readonly String Title;
 
       private static String[] Arguments { get; set; }
-      private static Boolean NoLogo { get; set; }
-      private static Boolean ShowUsageInfo { get; set; }
       private static Type CommandSet { get; set; }
       private static Dictionary<String, Type> CommandSets { get; set; }
+      private static Boolean NoLogo { get; set; }
+      private static Boolean ShowUsageInfo { get; set; }
 
       static Program()
       {
+         // Initialize Members.
+         Assembly = Assembly.GetExecutingAssembly();
+         AssemblyVersion = Program.Assembly.GetName().Version.ToString();
+         Name = "Operations Research";
+         Title = String.Format("{0} (Version {1})", Program.Name, Program.AssemblyVersion);
+
+         // Initialize Properties.
          Program.CommandSets = new Dictionary<string, Type>();
 
          foreach (Type type in Program.Assembly.GetTypes())
@@ -116,14 +124,54 @@
 
       private static void ParseArguments(String[] arguments)
       {
-         List<String> remainingArguments = new List<String>();
+         List<String> remainingArguments;
 
-         for (int i = 0; i < arguments.Length; i++)
+         // Check if first argument is a response file.
+         if ((arguments.Length > 1) && (arguments[1].StartsWith("@")))
+         {
+            String path;
+
+            path = arguments[1].Substring(1);
+            remainingArguments = new List<String>();
+            if (System.IO.File.Exists(path))
+            {
+               String[] lines;
+               Regex regex;
+
+               lines = System.IO.File.ReadAllLines(path);
+               regex = new Regex(@"^(?:\s*|#.*)$");
+               foreach (String line in lines)
+               {
+                  Int32 index;
+
+                  // Skip comments and empty lines.
+                  if (regex.IsMatch(line))
+                  {
+                     continue;
+                  }
+
+                  index = line.IndexOf(' ');
+                  if (-1 == index)
+                  {
+                     remainingArguments.Add(line);
+                  }
+                  else
+                  {
+                     remainingArguments.Add(line.Substring(0, index).Trim());
+                     remainingArguments.Add(line.Substring(index).Trim());
+                  }
+               }
+            }
+
+            arguments = remainingArguments.ToArray();
+         }
+
+         remainingArguments = new List<String>();
+         for (int i = 1; i < arguments.Length; i++)
          {
             String argument;
             
             argument = arguments[i].ToLowerInvariant();
-
             if (argument.Equals("/nologo", StringComparison.OrdinalIgnoreCase))
             {
                Program.NoLogo = true;

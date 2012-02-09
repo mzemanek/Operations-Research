@@ -14,4 +14,5 @@
 ./Source/Console/ThrowUtility.cs
 ./Source/Console/Simplex/Simplex.cs
 ./Source/Console/Simplex/SimplexArguments.cs
-
+./Source/Console/Math/Matrix.cs
+./Source/Console/Math/Rational.cs

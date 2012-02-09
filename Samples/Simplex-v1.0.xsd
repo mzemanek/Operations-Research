@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+   <!--xmlns="http://www.fom.de/schemas/operations-research/simplex/ws-2011"-->
+   <!-- Simple types -->
+   <xs:simpleType name="rationalType">
+      <xs:restriction base="xs:string">
+         <xs:pattern value="[+-]?(0|([1-9][0-9]*)|((0|[1-9][0-9]*)/[1-9][0-9]*)|([1-9][0-9]*) ((0|[1-9][0-9]*)/[1-9][0-9]*))" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <!-- Complex types -->
+   <xs:complexType name="columnType">
+      <xs:simpleContent>
+         <xs:extension base="xs:string">
+            <xs:attribute name="index" type="xs:nonNegativeInteger" />
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   
+   <xs:complexType name="columnsType">
+      <xs:sequence>
+         <xs:element maxOccurs="unbounded" name="Column" type="columnType" />
+      </xs:sequence>   
+   </xs:complexType>
+   
+   <xs:complexType name="elementType">
+      <xs:simpleContent>
+         <xs:extension base="rationalType">
+            <xs:attribute name="m" type="xs:nonNegativeInteger" use="required" />
+            <xs:attribute name="n" type="xs:nonNegativeInteger" use="required" />
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+
+   <xs:complexType name="elementsType">
+      <xs:sequence>
+         <xs:element name="Element" minOccurs="0" maxOccurs="unbounded" type="elementType" />
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="simplexType">
+      <xs:sequence>
+         <xs:element name="Tableaux" type="tableauxType">
+            <xs:unique name="uniqueTableauIndex">
+               <xs:selector xpath="Tableau" />
+               <xs:field xpath="@index" />
+            </xs:unique>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="solutionType">
+      <xs:sequence>
+         <xs:element maxOccurs="unbounded" name="Element">
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:extension base="rationalType">
+                     <xs:attribute name="n" type="xs:nonNegativeInteger" use="required" />
+                  </xs:extension>
+               </xs:simpleContent>
+            </xs:complexType>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="solutionsType">
+      <xs:sequence>
+         <xs:element maxOccurs="unbounded" name="Solution" type="solutionType" />
+      </xs:sequence>   
+   </xs:complexType>
+   
+   <xs:complexType name="tableauType">
+      <xs:sequence>
+         <xs:element minOccurs="0" name="Columns" type="columnsType">
+            <xs:unique name="uniqueColumnIndex">
+               <xs:selector xpath="Column" />
+               <xs:field xpath="@index" />
+            </xs:unique>
+         </xs:element>
+         <xs:element name="Elements" type="elementsType">
+            <xs:unique name="uniqueElementAccessor">
+               <xs:selector xpath="Element" />
+               <xs:field xpath="@m" />
+               <xs:field xpath="@n" />
+            </xs:unique>
+         </xs:element>
+         <xs:element minOccurs="0" name="Solution" type="solutionType">
+            <xs:unique name="uniqueSolutionElementRowAndColumn">
+               <xs:selector xpath="Element" />
+               <xs:field xpath="@m" />
+               <xs:field xpath="@n" />
+            </xs:unique>
+         </xs:element>
+      </xs:sequence>
+      <xs:attribute name="index" type="xs:nonNegativeInteger" use="required" />
+      <xs:attribute name="previous" type="xs:nonNegativeInteger" />
+   </xs:complexType>
+
+   <xs:complexType name="tableauxType">
+      <xs:sequence>
+         <xs:element maxOccurs="unbounded" name="Tableau" type="tableauType" />
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="transformationType">
+      <xs:sequence>
+         
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="transformationsType">
+      <xs:sequence>
+         <xs:element name="Transformation" maxOccurs="unbounded" />
+      </xs:sequence>   
+   </xs:complexType>
+   
+   <!-- Document -->
+   <xs:element name="OperationsResearch">
+      <xs:complexType>
+         <xs:choice>
+            <xs:element name="Simplex" type="simplexType">
+               <xs:key name="TableauKey">
+                  <xs:selector xpath="Tableaux/Tableau" />
+                  <xs:field xpath="@index" />
+               </xs:key>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>

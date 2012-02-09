@@ -1,0 +1,22 @@
+# This is a sample response file.
+# Lines that begin with a `#` are comments.
+
+
+# Empty lines and whitespace-only lines should be ignored, too.
+	
+   
+# First argument should be the command set:
+simplex
+
+# This response file asumes execution from ./Operations-Research
+# The input file:
+./Samples/Sample.txt
+
+# The output file
+/output ./Sample.out.xml
+
+# Optimization mode [min*|max]
+/mode min
+
+# First row in input holds column headers.
+/columnheaders

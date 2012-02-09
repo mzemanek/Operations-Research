@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="CommandSetException.cs" />
     <Compile Include="ICommandSet.cs" />
+    <Compile Include="Math\Matrix.cs" />
+    <Compile Include="Math\Rational.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="CommandSetAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
