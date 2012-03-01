@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7a20fadc-c97e-4964-91bd-73821192064e" name="Mike@LT-DEV 2012-02-24 23:54:36" runUser="LT-DEV\Mike" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="281a674b-01dd-4c13-9e79-46c91722e9fd">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Mike_LT-DEV 2012-02-24 23_54_36">
+      <DeploymentItem filename="C:\Development\github.com\mzemanek\Operations-Research\Development\Debug\OR.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-24T23:54:36.1052898+01:00" queuing="2012-02-24T23:54:37.6340925+01:00" start="2012-02-24T23:54:37.9460931+01:00" finish="2012-02-24T23:54:39.0692950+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="24" executed="24" passed="24" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ImplicitOperatorDoubleTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="b23bba83-5eb8-4c7e-5176-07c4f0bf2089">
+      <Execution id="79cee01c-e340-4e00-be71-d99cdc3e0f53" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ImplicitOperatorDoubleTest" />
+    </UnitTest>
+    <UnitTest name="ReciprocalTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="eb9a396d-cbc2-af60-cbcb-8faa2b5be10d">
+      <Execution id="e7308e91-539d-4378-b37a-fe1d13d42e13" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ReciprocalTest" />
+    </UnitTest>
+    <UnitTest name="ConstructionTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="2f078a97-0fea-f169-3d1b-77dd9f398674">
+      <Execution id="d8e6e32f-6866-4967-b196-2b1466a1c94d" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.SimplexArgumentsTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConstructionTest" />
+    </UnitTest>
+    <UnitTest name="ComposingTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="35925eda-d0f2-04d7-7f4c-02e3962fe399">
+      <Execution id="8f6dd7c9-9582-496e-9fd8-84e2d2b670ad" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalExpressionTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ComposingTest" />
+    </UnitTest>
+    <UnitTest name="ImplicitOperatorArrayTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="66305168-9538-7af9-6132-6751b333b0db">
+      <Execution id="a7f69ab0-b33c-4110-b898-c6c13ad029df" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.MatrixTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ImplicitOperatorArrayTest" />
+    </UnitTest>
+    <UnitTest name="SubtractTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="29cb9bbe-7024-8f43-8a86-be9af1557b5e">
+      <Execution id="7848fcab-4a31-4761-99de-5add96e4a6dd" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SubtractTest" />
+    </UnitTest>
+    <UnitTest name="ReduceTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="ca06868b-c093-84d9-d8af-7d30fe39658d">
+      <Execution id="72381ac4-bf93-4034-96b3-15911acada59" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ReduceTest" />
+    </UnitTest>
+    <UnitTest name="ImplicitOperatorStringTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="9487030c-2365-efd1-e45c-69b706e3c43c">
+      <Execution id="ed18572f-cae3-4d8b-a107-289f076f445e" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ImplicitOperatorStringTest" />
+    </UnitTest>
+    <UnitTest name="IsUnitVectorTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="27f8552e-743d-2a80-6019-c28494ce9840">
+      <Execution id="1a427412-7973-4f66-8fec-82e35abbbd63" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IsUnitVectorTest" />
+    </UnitTest>
+    <UnitTest name="FunctionalTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="168e3a5e-6f57-fd4e-76cf-c6d8ba2fc6df">
+      <Execution id="feec541d-158b-455a-a8bb-4ecdc9497bad" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.SimplexAlgorithmTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FunctionalTest" />
+    </UnitTest>
+    <UnitTest name="ConstructionWithVariableTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="07b026b0-c373-4092-e5e7-c7099b63bd18">
+      <Execution id="7ecae9d8-0c27-4226-8b09-780cb1144161" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalExpressionTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConstructionWithVariableTest" />
+    </UnitTest>
+    <UnitTest name="ConstructorTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="dfcf39e1-4d9b-fa42-8c77-4b1b440dd82d">
+      <Execution id="babd09f5-76c4-43af-a082-c94eb7db05fb" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.MatrixTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConstructorTest" />
+    </UnitTest>
+    <UnitTest name="ParseValidStringTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="8437b6d5-ef84-24e5-5208-1601b02dcb15">
+      <Execution id="a9c4c3d4-44f9-4bb7-833b-825463f9b7c1" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ParseValidStringTest" />
+    </UnitTest>
+    <UnitTest name="ConstructionTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="cabecd5a-dfd2-79e9-d291-2a4ca4565c1a">
+      <Execution id="564c40c4-6657-4954-8bc4-f9c8834d726a" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.SimplexAlgorithmTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConstructionTest" />
+    </UnitTest>
+    <UnitTest name="ConstructionWithArguments" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="b33186aa-0dc0-166f-d083-abbacc59d710">
+      <Execution id="a9fa31c1-fd8d-49ea-b295-64768533c2f0" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.SimplexArgumentsTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConstructionWithArguments" />
+    </UnitTest>
+    <UnitTest name="ConstructionWithUnknownTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="d2e14fa0-2597-cab8-e01c-6265a99b3a61">
+      <Execution id="6e48285a-1b88-4f03-9e11-d6e855a0aa6d" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalExpressionTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConstructionWithUnknownTest" />
+    </UnitTest>
+    <UnitTest name="ParseInvalidStringTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="3e61a614-9b41-c46c-cbe8-c65caddd1221">
+      <Execution id="e962dd1c-91a3-4aec-84ee-76f302e654d8" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ParseInvalidStringTest" />
+    </UnitTest>
+    <UnitTest name="MultiplyTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="4c4403dd-6eeb-1f03-bf9e-4d3ba7f7987f">
+      <Execution id="066e71ff-0995-4c8f-acb6-2f013618297e" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MultiplyTest" />
+    </UnitTest>
+    <UnitTest name="DivideTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="fdabfbfc-d2d3-3127-b89d-6e166e32e0fb">
+      <Execution id="ab147f11-95df-49cd-9bf1-b9c655380a33" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DivideTest" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="201281b7-7c3f-c2d6-c0be-23b17add0da6">
+      <Execution id="8d889a30-7759-4611-899f-225080028983" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.SimplexCommandSetTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="ParseNullTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="b91f7122-8c32-3972-d630-7b3adb743ac3">
+      <Execution id="4c1d33c1-c50c-4b58-878a-f4d4d7872560" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ParseNullTest" />
+    </UnitTest>
+    <UnitTest name="ImplicitOperatorStringFailTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="82ab36ca-4646-b8ab-f300-5b9b42c69f01">
+      <Execution id="0925983f-d36e-43fe-b9a6-a520406c4164" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ImplicitOperatorStringFailTest" />
+    </UnitTest>
+    <UnitTest name="AddTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="8f6c3401-83a9-8e4f-1abb-893c8f7c576e">
+      <Execution id="02c96bfa-aac9-44d3-8c11-cb524758d664" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddTest" />
+    </UnitTest>
+    <UnitTest name="ConstructionWithExpressionTest" storage="c:\development\github.com\mzemanek\operations-research\development\tests\consoletests\bin\debug\consoletests.dll" id="0b16e324-18ec-013c-60b2-02e859579a3a">
+      <Execution id="2139bee7-8a0e-4220-9cf6-3d547a3333de" />
+      <TestMethod codeBase="C:/Development/github.com/mzemanek/Operations-Research/Development/Tests/ConsoleTests/bin/Debug/ConsoleTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ConsoleTests.RationalExpressionTests, ConsoleTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConstructionWithExpressionTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="07b026b0-c373-4092-e5e7-c7099b63bd18" executionId="7ecae9d8-0c27-4226-8b09-780cb1144161" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0b16e324-18ec-013c-60b2-02e859579a3a" executionId="2139bee7-8a0e-4220-9cf6-3d547a3333de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="168e3a5e-6f57-fd4e-76cf-c6d8ba2fc6df" executionId="feec541d-158b-455a-a8bb-4ecdc9497bad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="201281b7-7c3f-c2d6-c0be-23b17add0da6" executionId="8d889a30-7759-4611-899f-225080028983" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="27f8552e-743d-2a80-6019-c28494ce9840" executionId="1a427412-7973-4f66-8fec-82e35abbbd63" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="29cb9bbe-7024-8f43-8a86-be9af1557b5e" executionId="7848fcab-4a31-4761-99de-5add96e4a6dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f078a97-0fea-f169-3d1b-77dd9f398674" executionId="d8e6e32f-6866-4967-b196-2b1466a1c94d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="35925eda-d0f2-04d7-7f4c-02e3962fe399" executionId="8f6dd7c9-9582-496e-9fd8-84e2d2b670ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3e61a614-9b41-c46c-cbe8-c65caddd1221" executionId="e962dd1c-91a3-4aec-84ee-76f302e654d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4c4403dd-6eeb-1f03-bf9e-4d3ba7f7987f" executionId="066e71ff-0995-4c8f-acb6-2f013618297e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="66305168-9538-7af9-6132-6751b333b0db" executionId="a7f69ab0-b33c-4110-b898-c6c13ad029df" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="82ab36ca-4646-b8ab-f300-5b9b42c69f01" executionId="0925983f-d36e-43fe-b9a6-a520406c4164" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8437b6d5-ef84-24e5-5208-1601b02dcb15" executionId="a9c4c3d4-44f9-4bb7-833b-825463f9b7c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f6c3401-83a9-8e4f-1abb-893c8f7c576e" executionId="02c96bfa-aac9-44d3-8c11-cb524758d664" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9487030c-2365-efd1-e45c-69b706e3c43c" executionId="ed18572f-cae3-4d8b-a107-289f076f445e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b23bba83-5eb8-4c7e-5176-07c4f0bf2089" executionId="79cee01c-e340-4e00-be71-d99cdc3e0f53" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b33186aa-0dc0-166f-d083-abbacc59d710" executionId="a9fa31c1-fd8d-49ea-b295-64768533c2f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b91f7122-8c32-3972-d630-7b3adb743ac3" executionId="4c1d33c1-c50c-4b58-878a-f4d4d7872560" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ca06868b-c093-84d9-d8af-7d30fe39658d" executionId="72381ac4-bf93-4034-96b3-15911acada59" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cabecd5a-dfd2-79e9-d291-2a4ca4565c1a" executionId="564c40c4-6657-4954-8bc4-f9c8834d726a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d2e14fa0-2597-cab8-e01c-6265a99b3a61" executionId="6e48285a-1b88-4f03-9e11-d6e855a0aa6d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dfcf39e1-4d9b-fa42-8c77-4b1b440dd82d" executionId="babd09f5-76c4-43af-a082-c94eb7db05fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb9a396d-cbc2-af60-cbcb-8faa2b5be10d" executionId="e7308e91-539d-4378-b37a-fe1d13d42e13" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fdabfbfc-d2d3-3127-b89d-6e166e32e0fb" executionId="ab147f11-95df-49cd-9bf1-b9c655380a33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="7ecae9d8-0c27-4226-8b09-780cb1144161" testId="07b026b0-c373-4092-e5e7-c7099b63bd18" testName="ConstructionWithVariableTest" computerName="LT-DEV" duration="00:00:00.0703787" startTime="2012-02-24T23:54:38.0084932+01:00" endTime="2012-02-24T23:54:38.7572945+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7ecae9d8-0c27-4226-8b09-780cb1144161">
+    </UnitTestResult>
+    <UnitTestResult executionId="2139bee7-8a0e-4220-9cf6-3d547a3333de" testId="0b16e324-18ec-013c-60b2-02e859579a3a" testName="ConstructionWithExpressionTest" computerName="LT-DEV" duration="00:00:00.0120867" startTime="2012-02-24T23:54:38.7572945+01:00" endTime="2012-02-24T23:54:38.7728945+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2139bee7-8a0e-4220-9cf6-3d547a3333de">
+    </UnitTestResult>
+    <UnitTestResult executionId="feec541d-158b-455a-a8bb-4ecdc9497bad" testId="168e3a5e-6f57-fd4e-76cf-c6d8ba2fc6df" testName="FunctionalTest" computerName="LT-DEV" duration="00:00:00.0160375" startTime="2012-02-24T23:54:38.7728945+01:00" endTime="2012-02-24T23:54:38.7884945+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="feec541d-158b-455a-a8bb-4ecdc9497bad">
+    </UnitTestResult>
+    <UnitTestResult executionId="8d889a30-7759-4611-899f-225080028983" testId="201281b7-7c3f-c2d6-c0be-23b17add0da6" testName="TestMethod1" computerName="LT-DEV" duration="00:00:00.0002861" startTime="2012-02-24T23:54:38.7884945+01:00" endTime="2012-02-24T23:54:38.8040946+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8d889a30-7759-4611-899f-225080028983">
+    </UnitTestResult>
+    <UnitTestResult executionId="1a427412-7973-4f66-8fec-82e35abbbd63" testId="27f8552e-743d-2a80-6019-c28494ce9840" testName="IsUnitVectorTest" computerName="LT-DEV" duration="00:00:00.0005600" startTime="2012-02-24T23:54:38.8040946+01:00" endTime="2012-02-24T23:54:38.8040946+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1a427412-7973-4f66-8fec-82e35abbbd63">
+    </UnitTestResult>
+    <UnitTestResult executionId="7848fcab-4a31-4761-99de-5add96e4a6dd" testId="29cb9bbe-7024-8f43-8a86-be9af1557b5e" testName="SubtractTest" computerName="LT-DEV" duration="00:00:00.0005248" startTime="2012-02-24T23:54:38.8040946+01:00" endTime="2012-02-24T23:54:38.8040946+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7848fcab-4a31-4761-99de-5add96e4a6dd">
+    </UnitTestResult>
+    <UnitTestResult executionId="d8e6e32f-6866-4967-b196-2b1466a1c94d" testId="2f078a97-0fea-f169-3d1b-77dd9f398674" testName="ConstructionTest" computerName="LT-DEV" duration="00:00:00.0038231" startTime="2012-02-24T23:54:38.8196946+01:00" endTime="2012-02-24T23:54:38.8196946+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d8e6e32f-6866-4967-b196-2b1466a1c94d">
+    </UnitTestResult>
+    <UnitTestResult executionId="8f6dd7c9-9582-496e-9fd8-84e2d2b670ad" testId="35925eda-d0f2-04d7-7f4c-02e3962fe399" testName="ComposingTest" computerName="LT-DEV" duration="00:00:00.0004850" startTime="2012-02-24T23:54:38.8196946+01:00" endTime="2012-02-24T23:54:38.8196946+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8f6dd7c9-9582-496e-9fd8-84e2d2b670ad">
+    </UnitTestResult>
+    <UnitTestResult executionId="e962dd1c-91a3-4aec-84ee-76f302e654d8" testId="3e61a614-9b41-c46c-cbe8-c65caddd1221" testName="ParseInvalidStringTest" computerName="LT-DEV" duration="00:00:00.0068661" startTime="2012-02-24T23:54:38.8196946+01:00" endTime="2012-02-24T23:54:38.8352946+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e962dd1c-91a3-4aec-84ee-76f302e654d8">
+    </UnitTestResult>
+    <UnitTestResult executionId="066e71ff-0995-4c8f-acb6-2f013618297e" testId="4c4403dd-6eeb-1f03-bf9e-4d3ba7f7987f" testName="MultiplyTest" computerName="LT-DEV" duration="00:00:00.0003201" startTime="2012-02-24T23:54:38.8352946+01:00" endTime="2012-02-24T23:54:38.8352946+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="066e71ff-0995-4c8f-acb6-2f013618297e">
+    </UnitTestResult>
+    <UnitTestResult executionId="a7f69ab0-b33c-4110-b898-c6c13ad029df" testId="66305168-9538-7af9-6132-6751b333b0db" testName="ImplicitOperatorArrayTest" computerName="LT-DEV" duration="00:00:00.0017348" startTime="2012-02-24T23:54:38.8508947+01:00" endTime="2012-02-24T23:54:38.8508947+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7f69ab0-b33c-4110-b898-c6c13ad029df">
+    </UnitTestResult>
+    <UnitTestResult executionId="0925983f-d36e-43fe-b9a6-a520406c4164" testId="82ab36ca-4646-b8ab-f300-5b9b42c69f01" testName="ImplicitOperatorStringFailTest" computerName="LT-DEV" duration="00:00:00.0004747" startTime="2012-02-24T23:54:38.8508947+01:00" endTime="2012-02-24T23:54:38.8508947+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0925983f-d36e-43fe-b9a6-a520406c4164">
+    </UnitTestResult>
+    <UnitTestResult executionId="a9c4c3d4-44f9-4bb7-833b-825463f9b7c1" testId="8437b6d5-ef84-24e5-5208-1601b02dcb15" testName="ParseValidStringTest" computerName="LT-DEV" duration="00:00:00.0002232" startTime="2012-02-24T23:54:38.8508947+01:00" endTime="2012-02-24T23:54:38.8508947+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9c4c3d4-44f9-4bb7-833b-825463f9b7c1">
+    </UnitTestResult>
+    <UnitTestResult executionId="02c96bfa-aac9-44d3-8c11-cb524758d664" testId="8f6c3401-83a9-8e4f-1abb-893c8f7c576e" testName="AddTest" computerName="LT-DEV" duration="00:00:00.0003079" startTime="2012-02-24T23:54:38.8664947+01:00" endTime="2012-02-24T23:54:38.8664947+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="02c96bfa-aac9-44d3-8c11-cb524758d664">
+    </UnitTestResult>
+    <UnitTestResult executionId="ed18572f-cae3-4d8b-a107-289f076f445e" testId="9487030c-2365-efd1-e45c-69b706e3c43c" testName="ImplicitOperatorStringTest" computerName="LT-DEV" duration="00:00:00.0009976" startTime="2012-02-24T23:54:38.8976947+01:00" endTime="2012-02-24T23:54:38.8976947+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed18572f-cae3-4d8b-a107-289f076f445e">
+    </UnitTestResult>
+    <UnitTestResult executionId="79cee01c-e340-4e00-be71-d99cdc3e0f53" testId="b23bba83-5eb8-4c7e-5176-07c4f0bf2089" testName="ImplicitOperatorDoubleTest" computerName="LT-DEV" duration="00:00:00.0002072" startTime="2012-02-24T23:54:38.8976947+01:00" endTime="2012-02-24T23:54:38.9132948+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79cee01c-e340-4e00-be71-d99cdc3e0f53">
+    </UnitTestResult>
+    <UnitTestResult executionId="a9fa31c1-fd8d-49ea-b295-64768533c2f0" testId="b33186aa-0dc0-166f-d083-abbacc59d710" testName="ConstructionWithArguments" computerName="LT-DEV" duration="00:00:00.0007795" startTime="2012-02-24T23:54:38.9132948+01:00" endTime="2012-02-24T23:54:38.9132948+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9fa31c1-fd8d-49ea-b295-64768533c2f0">
+    </UnitTestResult>
+    <UnitTestResult executionId="4c1d33c1-c50c-4b58-878a-f4d4d7872560" testId="b91f7122-8c32-3972-d630-7b3adb743ac3" testName="ParseNullTest" computerName="LT-DEV" duration="00:00:00.0004170" startTime="2012-02-24T23:54:38.9132948+01:00" endTime="2012-02-24T23:54:38.9132948+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4c1d33c1-c50c-4b58-878a-f4d4d7872560">
+    </UnitTestResult>
+    <UnitTestResult executionId="72381ac4-bf93-4034-96b3-15911acada59" testId="ca06868b-c093-84d9-d8af-7d30fe39658d" testName="ReduceTest" computerName="LT-DEV" duration="00:00:00.0003637" startTime="2012-02-24T23:54:38.9132948+01:00" endTime="2012-02-24T23:54:38.9288948+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72381ac4-bf93-4034-96b3-15911acada59">
+    </UnitTestResult>
+    <UnitTestResult executionId="564c40c4-6657-4954-8bc4-f9c8834d726a" testId="cabecd5a-dfd2-79e9-d291-2a4ca4565c1a" testName="ConstructionTest" computerName="LT-DEV" duration="00:00:00.0003432" startTime="2012-02-24T23:54:38.9288948+01:00" endTime="2012-02-24T23:54:38.9288948+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="564c40c4-6657-4954-8bc4-f9c8834d726a">
+    </UnitTestResult>
+    <UnitTestResult executionId="6e48285a-1b88-4f03-9e11-d6e855a0aa6d" testId="d2e14fa0-2597-cab8-e01c-6265a99b3a61" testName="ConstructionWithUnknownTest" computerName="LT-DEV" duration="00:00:00.0002559" startTime="2012-02-24T23:54:38.9288948+01:00" endTime="2012-02-24T23:54:38.9288948+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6e48285a-1b88-4f03-9e11-d6e855a0aa6d">
+    </UnitTestResult>
+    <UnitTestResult executionId="babd09f5-76c4-43af-a082-c94eb7db05fb" testId="dfcf39e1-4d9b-fa42-8c77-4b1b440dd82d" testName="ConstructorTest" computerName="LT-DEV" duration="00:00:00.0006319" startTime="2012-02-24T23:54:38.9288948+01:00" endTime="2012-02-24T23:54:38.9444948+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="babd09f5-76c4-43af-a082-c94eb7db05fb">
+    </UnitTestResult>
+    <UnitTestResult executionId="e7308e91-539d-4378-b37a-fe1d13d42e13" testId="eb9a396d-cbc2-af60-cbcb-8faa2b5be10d" testName="ReciprocalTest" computerName="LT-DEV" duration="00:00:00.0002136" startTime="2012-02-24T23:54:38.9444948+01:00" endTime="2012-02-24T23:54:38.9444948+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e7308e91-539d-4378-b37a-fe1d13d42e13">
+    </UnitTestResult>
+    <UnitTestResult executionId="ab147f11-95df-49cd-9bf1-b9c655380a33" testId="fdabfbfc-d2d3-3127-b89d-6e166e32e0fb" testName="DivideTest" computerName="LT-DEV" duration="00:00:00.0002316" startTime="2012-02-24T23:54:38.9444948+01:00" endTime="2012-02-24T23:54:38.9444948+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab147f11-95df-49cd-9bf1-b9c655380a33">
+    </UnitTestResult>
+  </Results>
+</TestRun>

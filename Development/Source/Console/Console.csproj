@@ -44,13 +44,18 @@
   <ItemGroup>
     <Compile Include="CommandSetException.cs" />
     <Compile Include="ICommandSet.cs" />
+    <Compile Include="Math\ArithmeticOperation.cs" />
     <Compile Include="Math\Matrix.cs" />
     <Compile Include="Math\Rational.cs" />
+    <Compile Include="Math\RationalExpression.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="CommandSetAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Simplex\Simplex.cs" />
+    <Compile Include="Simplex\SimplexAlgorithm.cs" />
+    <Compile Include="Simplex\SimplexCommandSet.cs" />
     <Compile Include="Simplex\SimplexArguments.cs" />
+    <Compile Include="Simplex\SimplexMode.cs" />
+    <Compile Include="Simplex\SimplexResult.cs" />
     <Compile Include="ThrowUtility.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +64,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Program.usage" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

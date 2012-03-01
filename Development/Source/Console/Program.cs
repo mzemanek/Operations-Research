@@ -133,6 +133,7 @@
 
             path = arguments[1].Substring(1);
             remainingArguments = new List<String>();
+            remainingArguments.Add(arguments[0]);
             if (System.IO.File.Exists(path))
             {
                String[] lines;
@@ -164,6 +165,7 @@
             }
 
             arguments = remainingArguments.ToArray();
+            
          }
 
          remainingArguments = new List<String>();

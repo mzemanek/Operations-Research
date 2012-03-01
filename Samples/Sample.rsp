@@ -10,13 +10,19 @@ simplex
 
 # This response file asumes execution from ./Operations-Research
 # The input file:
-./Samples/Sample.txt
+./Samples/Sample.Maximize.txt
 
 # The output file
-/output ./Sample.out.xml
+/out ./Samples/Sample.Maximize.out.xml
 
-# Optimization mode [min*|max]
-/mode min
+# Optimization mode [Maximize*|Minimize]
+/mode Maximize
 
 # First row in input holds column headers.
 /columnheaders
+
+# Second row in input holds row headers.
+/rowheaders
+
+# Style sheet
+/transform Default.xsl

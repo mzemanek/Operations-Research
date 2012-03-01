@@ -12,7 +12,13 @@
 ./Source/Console/ICommandSet.cs
 ./Source/Console/Program.cs
 ./Source/Console/ThrowUtility.cs
-./Source/Console/Simplex/Simplex.cs
-./Source/Console/Simplex/SimplexArguments.cs
+
+./Source/Console/Math/ArithmeticOperation.cs
 ./Source/Console/Math/Matrix.cs
 ./Source/Console/Math/Rational.cs
+./Source/Console/Math/RationalExpression.cs
+
+./Source/Console/Simplex/SimplexAlgorithm.cs
+./Source/Console/Simplex/SimplexArguments.cs
+./Source/Console/Simplex/SimplexCommandSet.cs
+./Source/Console/Simplex/SimplexMode.cs

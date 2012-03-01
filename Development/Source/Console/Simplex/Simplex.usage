@@ -1,6 +1,11 @@
 ﻿   <command-set>           ::= simplex
-   <command-set-options>   ::=
+   <command-set-options>   ::= <input-path>[ /c[olumnheaders]][ /m[ode] <optimization>]
+                               [ /o[ut] <output-path>][ /rowheaders][ /t[ransform] <transform-path>]
 
    Usage information:
 
-      // TODO: Continue here
+      <input-path>         ::= path to input file.
+      <optimization>       ::= Maximize|Minimize (Default: Maximize)
+      <output-path>        ::= Path to output file (Default: <input-path>.<output-format>)
+      <transform-path>     ::= Path to xslt-transform
+

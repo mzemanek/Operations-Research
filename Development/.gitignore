@@ -4,6 +4,8 @@ Release/
 
 obj/
 
+*.crunchsolution.cache
+*.ncrunchsolution.user
 *.suo
 *.user
 

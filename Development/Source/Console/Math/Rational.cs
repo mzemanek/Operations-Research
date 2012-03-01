@@ -2,6 +2,7 @@
 {
    using System;
    using System.Collections.Generic;
+   using System.ComponentModel;
    using System.Text;
    using System.Text.RegularExpressions;
 
@@ -25,10 +26,9 @@
          options = RegexOptions.ExplicitCapture | RegexOptions.CultureInvariant;
 
          pattern = new StringBuilder();
-         pattern.Append(@"^");
-         pattern.Append(@"(?<coefficient>0)");
+         pattern.Append(@"^(?<coefficient>0)$");
          pattern.Append(@"|");
-         pattern.Append(@"(?:\+|(?<negative>-))?");
+         pattern.Append(@"^(?:\+|(?<negative>-))?");
          pattern.Append(@"(?:");
          pattern.Append(@"(?<coefficient>[1-9][0-9]*)");
          pattern.Append(@"|");
@@ -54,11 +54,14 @@
 
       public Rational Add(Rational r)
       {
-         Int32 lcd = Rational.LeastCommonMultiple(this.denominator, r.denominator);
+         Int32 lcd;
          Int32 numerator;
 
+         lcd = Rational.LeastCommonMultiple(this.denominator, r.denominator);
          numerator = this.numerator * (lcd / this.denominator) * ((this.isNegative) ? -1 : 1);
          numerator += r.numerator * (lcd / r.denominator) * ((r.isNegative) ? -1 : 1);
+
+         Rational.Reduce(ref numerator, ref lcd);
 
          return new Rational(numerator, lcd);
       }
@@ -70,16 +73,27 @@
 
       public Rational Multiply(Rational r)
       {
-         return new Rational(this.numerator * r.numerator, this.denominator * r.denominator) { isNegative = (this.isNegative ^ r.isNegative) };
+         Int32 denominator;
+         Int32 numerator;
+
+         denominator = this.denominator * r.denominator;
+         numerator = this.numerator * r.numerator;
+
+         Rational.Reduce(ref numerator, ref denominator);
+
+         return new Rational(numerator, denominator) { isNegative = (this.isNegative ^ r.isNegative) };
       }
 
       public Rational Subtract(Rational r)
       {
-         Int32 lcd = Rational.LeastCommonMultiple(this.denominator, r.denominator);
+         Int32 lcd;
          Int32 numerator;
 
+         lcd = Rational.LeastCommonMultiple(this.denominator, r.denominator);
          numerator = this.numerator * (lcd / this.denominator) * ((this.isNegative) ? -1 : 1);
          numerator -= r.numerator * (lcd / r.denominator) * ((r.isNegative) ? -1 : 1);
+
+         Rational.Reduce(ref numerator, ref lcd);
 
          return new Rational(numerator, lcd);
       }
@@ -120,10 +134,32 @@
          }
       }
 
+      public static Boolean IsUnitVector(Rational[] vector)
+      {
+         Int32 ones;
+         Int32 zeros;
+
+         ones = 0;
+         zeros = 0;
+
+         for (Int32 i = 0; i < vector.Length; i++)
+         {
+            ones += Rational.One.Equals(vector[i]) ? 1 : 0;
+            zeros += Rational.Zero.Equals(vector[i]) ? 1 : 0;
+         }
+
+         return ((vector.Length == ones + zeros) && (1 == ones));
+      }
+
+      /// <summary>
+      /// 
+      /// </summary>
+      /// <param name="input"></param>
+      /// <returns></returns>
+      /// <exception cref="ArgumentNullException" />
+      /// <exception cref="FormatException" />
       public static Rational Parse(String input)
       {
-         Int32 numerator = 0;
-         Int32 denominator = 0;
          Match match;
 
          // Validate input parameters.
@@ -134,22 +170,21 @@
          {
             checked
             {
-               denominator = (match.Groups["denominator"].Success) ? Int32.Parse(match.Groups["denominator"].Value) : 1;
+               Int32 coefficient;
+               Int32 denominator;
+               Boolean negative;
+               Int32 numerator;
+
+               negative = match.Groups["negative"].Success;
+               coefficient = (match.Groups["coefficient"].Success) ? Int32.Parse(match.Groups["coefficient"].Value) : 0;
                numerator = (match.Groups["numerator"].Success) ? Int32.Parse(match.Groups["numerator"].Value) : 0;
+               denominator = (match.Groups["denominator"].Success) ? Int32.Parse(match.Groups["denominator"].Value) : 1;
 
-               if (match.Groups["coefficient"].Success)
-               {
-                  numerator += Int32.Parse(match.Groups["coefficient"].Value) * denominator;
-               }
-
-               if (match.Groups["negative"].Success)
-               {
-                  numerator *= -1;
-               }
+               return new Rational((coefficient * denominator) + numerator, denominator) { isNegative = negative };
             }
          }
 
-         return new Rational(numerator, denominator);
+         throw new FormatException(String.Format("\"{0}\" is not a valid Rational expression.", input));
       }
 
       public static Rational Reciprocal(Rational r)
@@ -159,9 +194,34 @@
 
       public static Rational Reduce(Rational r)
       {
-         Int32 gcd = Rational.GreatestCommonDivisor(r.numerator, r.denominator);
+         Int32 gcd;
+
+         gcd = Rational.GreatestCommonDivisor(r.numerator, r.denominator);
 
          return new Rational(r.numerator / gcd, r.denominator / gcd) { isNegative = r.isNegative };
+      }
+
+      public static void Reduce(ref Int32 numerator, ref Int32 denominator)
+      {
+         Int32 gcd;
+
+         gcd = Rational.GreatestCommonDivisor(numerator, denominator);
+         numerator = numerator / gcd;
+         denominator = denominator / gcd;
+      }
+
+      public static Boolean TryParse(String input, out Rational value)
+      {
+         value = Rational.Undefined;
+
+         if (String.IsNullOrEmpty(input) || !Regex.IsMatch(input))
+         {
+            return false;
+         }
+
+         value = Parse(input);
+
+         return true;
       }
 
       private static Int32 GreatestCommonDivisor(Int32 a, Int32 b)
@@ -237,25 +297,7 @@
 
       public static implicit operator Rational(String input)
       {
-         Match match;
-
-         match = Rational.Regex.Match(input);
-         if (match.Success)
-         {
-            Int32 coefficient;
-            Int32 denominator;
-            Boolean negative;
-            Int32 numerator;
-
-            negative = match.Groups["negative"].Success;
-            coefficient = (match.Groups["coefficient"].Success) ? Int32.Parse(match.Groups["coefficient"].Value) : 0;
-            numerator = (match.Groups["numerator"].Success) ? Int32.Parse(match.Groups["numerator"].Value) : 1;
-            denominator = (match.Groups["denominator"].Success) ? Int32.Parse(match.Groups["denominator"].Value) : 1;
-
-            return new Rational((coefficient * denominator) + numerator, denominator) { isNegative = negative };
-         }
-
-         throw new NotSupportedException();
+         return Rational.Parse(input);
       }
 
       //RationalExpression IRational.AsExpression()

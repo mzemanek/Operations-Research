@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="Default.xsl"?>
+<OperationsResearch xsi:schemaLocation="http://www.fom.de/schemas/operations-research/ws-11 Simplex-v1.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Simplex mode="Maximize">
+    <Tableaux>
+      <Tableau index="0">
+        <Columns>
+          <Column n="1">x1</Column>
+          <Column n="2">x2</Column>
+          <Column n="3">s1</Column>
+          <Column n="4">s2</Column>
+          <Column n="5">s3</Column>
+          <Column n="6">s4</Column>
+          <Column n="7">g(0)</Column>
+          <Column n="8"></Column>
+        </Columns>
+        <Pivot m="1" n="1" />
+        <Rows>
+          <Row m="1" function="I" transform="AZ / 1">
+            <Column n="1">1</Column>
+            <Column n="2">0</Column>
+            <Column n="3">1</Column>
+            <Column n="4">0</Column>
+            <Column n="5">0</Column>
+            <Column n="6">0</Column>
+            <Column n="7">0</Column>
+            <Column n="8">12</Column>
+            <Ratio>12</Ratio>
+          </Row>
+          <Row m="2" function="II" transform="Z2 - 0 * Z1">
+            <Column n="1">0</Column>
+            <Column n="2">1</Column>
+            <Column n="3">0</Column>
+            <Column n="4">1</Column>
+            <Column n="5">0</Column>
+            <Column n="6">0</Column>
+            <Column n="7">0</Column>
+            <Column n="8">15</Column>
+            <Ratio>0</Ratio>
+          </Row>
+          <Row m="3" function="III" transform="Z3 - 1 * Z1">
+            <Column n="1">1</Column>
+            <Column n="2">3</Column>
+            <Column n="3">0</Column>
+            <Column n="4">0</Column>
+            <Column n="5">1</Column>
+            <Column n="6">0</Column>
+            <Column n="7">0</Column>
+            <Column n="8">51</Column>
+            <Ratio>51</Ratio>
+          </Row>
+          <Row m="4" function="g" transform="Z4 - 3 * Z1">
+            <Column n="1">3</Column>
+            <Column n="2">1</Column>
+            <Column n="3">0</Column>
+            <Column n="4">0</Column>
+            <Column n="5">0</Column>
+            <Column n="6">1</Column>
+            <Column n="7">0</Column>
+            <Column n="8">41</Column>
+            <Ratio>13 2/3</Ratio>
+          </Row>
+          <Row m="5" function="" transform="Z5 - -9 * Z1">
+            <Column n="1">-9</Column>
+            <Column n="2">-3</Column>
+            <Column n="3">0</Column>
+            <Column n="4">0</Column>
+            <Column n="5">0</Column>
+            <Column n="6">0</Column>
+            <Column n="7">1</Column>
+            <Column n="8">0</Column>
+            <Ratio>undefined</Ratio>
+          </Row>
+        </Rows>
+        <Solution>
+          <Column n="1">-9</Column>
+          <Column n="2">-3</Column>
+          <Column n="3">0</Column>
+          <Column n="4">0</Column>
+          <Column n="5">0</Column>
+          <Column n="6">0</Column>
+          <Column n="7">undefined</Column>
+          <Column n="8">0</Column>
+        </Solution>
+      </Tableau>
+      <Tableau index="1">
+        <Columns>
+          <Column n="1">x1</Column>
+          <Column n="2">x2</Column>
+          <Column n="3">s1</Column>
+          <Column n="4">s2</Column>
+          <Column n="5">s3</Column>
+          <Column n="6">s4</Column>
+          <Column n="7">g(0)</Column>
+          <Column n="8"></Column>
+        </Columns>
+        <Pivot m="4" n="2" />
+        <Rows>
+          <Row m="1" function="I" transform="Z1 - 0 * Z4">
+            <Column n="1">1</Column>
+            <Column n="2">0</Column>
+            <Column n="3">1</Column>
+            <Column n="4">0</Column>
+            <Column n="5">0</Column>
+            <Column n="6">0</Column>
+            <Column n="7">0</Column>
+            <Column n="8">12</Column>
+            <Ratio>0</Ratio>
+          </Row>
+          <Row m="2" function="II" transform="Z2 - 1 * Z4">
+            <Column n="1">0</Column>
+            <Column n="2">1</Column>
+            <Column n="3">0</Column>
+            <Column n="4">1</Column>
+            <Column n="5">0</Column>
+            <Column n="6">0</Column>
+            <Column n="7">0</Column>
+            <Column n="8">15</Column>
+            <Ratio>15</Ratio>
+          </Row>
+          <Row m="3" function="III" transform="Z3 - 3 * Z4">
+            <Column n="1">0</Column>
+            <Column n="2">3</Column>
+            <Column n="3">-1</Column>
+            <Column n="4">0</Column>
+            <Column n="5">1</Column>
+            <Column n="6">0</Column>
+            <Column n="7">0</Column>
+            <Column n="8">39</Column>
+            <Ratio>13</Ratio>
+          </Row>
+          <Row m="4" function="g" transform="AZ / 1">
+            <Column n="1">0</Column>
+            <Column n="2">1</Column>
+            <Column n="3">-3</Column>
+            <Column n="4">0</Column>
+            <Column n="5">0</Column>
+            <Column n="6">1</Column>
+            <Column n="7">0</Column>
+            <Column n="8">5</Column>
+            <Ratio>5</Ratio>
+          </Row>
+          <Row m="5" function="" transform="Z5 - -3 * Z4">
+            <Column n="1">0</Column>
+            <Column n="2">-3</Column>
+            <Column n="3">9</Column>
+            <Column n="4">0</Column>
+            <Column n="5">0</Column>
+            <Column n="6">0</Column>
+            <Column n="7">1</Column>
+            <Column n="8">108</Column>
+            <Ratio>undefined</Ratio>
+          </Row>
+        </Rows>
+        <Solution>
+          <Column n="1">12</Column>
+          <Column n="2">0</Column>
+          <Column n="3">0</Column>
+          <Column n="4">15</Column>
+          <Column n="5">39</Column>
+          <Column n="6">5</Column>
+          <Column n="7">undefined</Column>
+          <Column n="8">108</Column>
+        </Solution>
+      </Tableau>
+      <Tableau index="2">
+        <Columns>
+          <Column n="1">x1</Column>
+          <Column n="2">x2</Column>
+          <Column n="3">s1</Column>
+          <Column n="4">s2</Column>
+          <Column n="5">s3</Column>
+          <Column n="6">s4</Column>
+          <Column n="7">g(0)</Column>
+          <Column n="8"></Column>
+        </Columns>
+        <Pivot m="0" n="0" />
+        <Rows>
+          <Row m="1" function="I">
+            <Column n="1">1</Column>
+            <Column n="2">0</Column>
+            <Column n="3">1</Column>
+            <Column n="4">0</Column>
+            <Column n="5">0</Column>
+            <Column n="6">0</Column>
+            <Column n="7">0</Column>
+            <Column n="8">12</Column>
+            <Ratio />
+          </Row>
+          <Row m="2" function="II">
+            <Column n="1">0</Column>
+            <Column n="2">0</Column>
+            <Column n="3">3</Column>
+            <Column n="4">1</Column>
+            <Column n="5">0</Column>
+            <Column n="6">-1</Column>
+            <Column n="7">0</Column>
+            <Column n="8">10</Column>
+            <Ratio />
+          </Row>
+          <Row m="3" function="III">
+            <Column n="1">0</Column>
+            <Column n="2">0</Column>
+            <Column n="3">8</Column>
+            <Column n="4">0</Column>
+            <Column n="5">1</Column>
+            <Column n="6">-3</Column>
+            <Column n="7">0</Column>
+            <Column n="8">24</Column>
+            <Ratio />
+          </Row>
+          <Row m="4" function="g">
+            <Column n="1">0</Column>
+            <Column n="2">1</Column>
+            <Column n="3">-3</Column>
+            <Column n="4">0</Column>
+            <Column n="5">0</Column>
+            <Column n="6">1</Column>
+            <Column n="7">0</Column>
+            <Column n="8">5</Column>
+            <Ratio />
+          </Row>
+          <Row m="5" function="">
+            <Column n="1">0</Column>
+            <Column n="2">0</Column>
+            <Column n="3">0</Column>
+            <Column n="4">0</Column>
+            <Column n="5">0</Column>
+            <Column n="6">3</Column>
+            <Column n="7">1</Column>
+            <Column n="8">123</Column>
+            <Ratio />
+          </Row>
+        </Rows>
+        <Solution>
+          <Column n="1">12</Column>
+          <Column n="2">5</Column>
+          <Column n="3">0</Column>
+          <Column n="4">10</Column>
+          <Column n="5">24</Column>
+          <Column n="6">0</Column>
+          <Column n="7">undefined</Column>
+          <Column n="8">123</Column>
+        </Solution>
+      </Tableau>
+    </Tableaux>
+  </Simplex>
+</OperationsResearch>
