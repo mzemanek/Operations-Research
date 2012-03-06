@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="Default.xsl"?>
+<OperationsResearch xsi:schemaLocation="http://www.fom.de/schemas/operations-research/ws-11 Simplex-v1.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Simplex mode="Minimize">
+    <Tableaux>
+      <Tableau index="0">
+        <Columns>
+          <Column n="1">x1</Column>
+          <Column n="2">x2</Column>
+          <Column n="3">s1</Column>
+          <Column n="4">e2</Column>
+          <Column n="5">k(0)</Column>
+          <Column n="6"></Column>
+        </Columns>
+        <Pivot m="3" n="1" />
+        <Rows>
+          <Row m="1" function="I" transform="Z1 - 1/4 * Z3">
+            <Column n="1">1/4</Column>
+            <Column n="2">0</Column>
+            <Column n="3">1</Column>
+            <Column n="4">0</Column>
+            <Column n="5">0</Column>
+            <Column n="6">1 1/2</Column>
+            <Ratio>6</Ratio>
+          </Row>
+          <Row m="2" function="II" transform="Z2 - 1 * Z3">
+            <Column n="1">1</Column>
+            <Column n="2">1</Column>
+            <Column n="3">0</Column>
+            <Column n="4">0</Column>
+            <Column n="5">0</Column>
+            <Column n="6">10</Column>
+            <Ratio>10</Ratio>
+          </Row>
+          <Row m="3" function="III" transform="AZ / 2">
+            <Column n="1">2</Column>
+            <Column n="2">0</Column>
+            <Column n="3">0</Column>
+            <Column n="4">1</Column>
+            <Column n="5">0</Column>
+            <Column n="6">10</Column>
+            <Ratio>5</Ratio>
+          </Row>
+          <Row m="4" function="k" transform="Z4 - 1 * Z3">
+            <Column n="1">1</Column>
+            <Column n="2">0</Column>
+            <Column n="3">0</Column>
+            <Column n="4">0</Column>
+            <Column n="5">1</Column>
+            <Column n="6">30</Column>
+            <Ratio>undefined</Ratio>
+          </Row>
+        </Rows>
+        <Solution>
+          <Column n="1">1</Column>
+          <Column n="2">0</Column>
+          <Column n="3">0</Column>
+          <Column n="4">0</Column>
+          <Column n="5">undefined</Column>
+          <Column n="6">30</Column>
+        </Solution>
+      </Tableau>
+      <Tableau index="1">
+        <Columns>
+          <Column n="1">x1</Column>
+          <Column n="2">x2</Column>
+          <Column n="3">s1</Column>
+          <Column n="4">e2</Column>
+          <Column n="5">k(0)</Column>
+          <Column n="6"></Column>
+        </Columns>
+        <Pivot m="0" n="0" />
+        <Rows>
+          <Row m="1" function="I">
+            <Column n="1">0</Column>
+            <Column n="2">0</Column>
+            <Column n="3">1</Column>
+            <Column n="4">-1/8</Column>
+            <Column n="5">0</Column>
+            <Column n="6">1/4</Column>
+            <Ratio />
+          </Row>
+          <Row m="2" function="II">
+            <Column n="1">0</Column>
+            <Column n="2">1</Column>
+            <Column n="3">0</Column>
+            <Column n="4">-1/2</Column>
+            <Column n="5">0</Column>
+            <Column n="6">5</Column>
+            <Ratio />
+          </Row>
+          <Row m="3" function="III">
+            <Column n="1">1</Column>
+            <Column n="2">0</Column>
+            <Column n="3">0</Column>
+            <Column n="4">1/2</Column>
+            <Column n="5">0</Column>
+            <Column n="6">5</Column>
+            <Ratio />
+          </Row>
+          <Row m="4" function="k">
+            <Column n="1">0</Column>
+            <Column n="2">0</Column>
+            <Column n="3">0</Column>
+            <Column n="4">-1/2</Column>
+            <Column n="5">1</Column>
+            <Column n="6">25</Column>
+            <Ratio />
+          </Row>
+        </Rows>
+        <Solution>
+          <Column n="1">5</Column>
+          <Column n="2">5</Column>
+          <Column n="3">1/4</Column>
+          <Column n="4">0</Column>
+          <Column n="5">undefined</Column>
+          <Column n="6">25</Column>
+        </Solution>
+      </Tableau>
+    </Tableaux>
+  </Simplex>
+</OperationsResearch>

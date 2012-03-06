@@ -1,0 +1,16 @@
+﻿# This is a comment
+# The input file should parse no matter where comments appear.
+# Empty rows shall be ignored.
+
+# An input file can define column headers (=variable names) => /c[olumheaders]
+x1,x2,s1,e2,k(0)
+
+# An input file can define row headers (=variable names) => /r[owheaders]
+I,II,III,k
+
+1/4,0,1,0,0,1 1/2
+1,1,0,0,0,10
+2,0,0,1,0,10
+
+# Last row holds target function:
+1,0,0,0,1,30
