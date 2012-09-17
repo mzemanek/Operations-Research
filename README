@@ -1,0 +1,13 @@
+Deployment for Mono
+ tested with Ubuntu Desktop Lucid (10.04)
+
+Installing Mono:
+sudo apt-get install mono-devel
+
+Compile using a terminal:
+./Development/Operations-Research.Mono.sh
+ May require chmod 777 ./Development/Operations-Research.Mono.sh to make it executable.
+ The bash file recreates ./Development/Release and runs gmcs with a response file (./Development/Source/Console.rsp).
+
+Running the application:
+mono ./Development/Release/OR.exe [...]
